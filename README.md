@@ -128,6 +128,8 @@ Postup získání klíče:
 4. V části určené pro správu API klíčů nebo přístupových tokenů vytvořte nový klíč, pokud je tato možnost pro váš účet dostupná.
 5. Vygenerovaný klíč si ihned bezpečně zkopírujte a uložte.
 
+Notebook obsahuje krok pro zadání tokenu TABPFN_TOKEN. Požadavky na autentizaci se mohou lišit podle verze knihovny TabPFN a způsobu získání modelových vah. V případě potřeby postupujte podle aktuálních pokynů Prior Labs.
+
 **Důležité:** Celá hodnota nově vytvořeného klíče se může zobrazit pouze jednou, bezprostředně při jeho vytvoření. Po zavření okna už nemusí být možné ji znovu zobrazit. Pokud klíč ztratíte, bude potřeba vytvořit nový.
 
 ### 7.3 Vložení klíče do Google Colabu
@@ -165,22 +167,18 @@ Projekt používá lokální knihovnu `tabpfn`, nikoli cloudového klienta `tabp
 
 Po úspěšném spuštění notebook vytvoří srovnání modelů, statistické tabulky, grafy, analýzu chyb a uloží checkpointy vlastních neuronových sítí.
 
-### 7.5 Reprodukovatelnost
-
-Pro opakování experimentů jsou použita náhodná semínka `42`, `123` a `2026`.
-
-Dosažené výsledky se mohou mírně lišit podle verzí knihoven, použitého hardwaru a prostředí Google Colab. Pro co nejvěrnější reprodukci se doporučuje používat verze závislostí uvedené v souboru `requirements.txt`.
-
 
 ## 8. Reprodukovatelnost
 
-Projekt používá pevně definované rozdělení dat a náhodná semínka.
+Projekt využívá pevně definované rozdělení dat na trénovací (70 %), validační (15 %) a testovací (15 %) množinu. Pro opakované experimenty jsou použita náhodná semínka `42`, `123` a `2026`.
 
-Nejdůležitější výsledky jsou zaznamenány přímo v notebooku. Obsahuje také grafy trénování, porovnání modelů a analýzu chyb.
+Veškerý zdrojový kód, výsledky experimentů, grafy průběhu trénování, porovnání modelů a analýza chyb jsou součástí Jupyter notebooku.
 
-Checkpointy MLP se ukládají do složky `ulozene_modely` spolu se scalerem a konfiguračním souborem.
+Při spuštění notebooku se vytvářejí výstupní soubory a checkpointy modelů. Natrénované modely MLP, použitý scaler a konfigurace se ukládají do složky `ulozene_modely`.
 
-Výsledky se mohou mírně lišit podle verzí knihoven a použitého hardwaru.
+Výstupní soubory vznikají v prostředí Google Colab a nejsou automaticky ukládány do GitHub repozitáře. Pro jejich uchování je nutné je samostatně stáhnout.
+
+Potřebné knihovny jsou uvedeny v souboru `requirements.txt`. Výsledky experimentů se mohou mírně lišit podle verzí knihoven, použitého hardwaru a prostředí Google Colab.
 
 ## 9. Výpočetní prostředí
 
