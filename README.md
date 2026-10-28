@@ -116,6 +116,14 @@ Projekt je vytvořen v jazyce Python v prostředí Google Colab. Pro jeho spušt
 
 Notebook obsahuje instalační příkazy pro potřebné knihovny. Dataset Wine Quality se načítá automaticky z veřejného zdroje UCI Machine Learning Repository.
 
+Seznam potřebných knihoven je uveden v souboru `requirements.txt`. Pokud je tento soubor dostupný v pracovním prostředí, lze knihovny nainstalovat pomocí příkazu:
+
+```bash
+pip install -r requirements.txt
+```
+
+Při použití Google Colabu je možné využít instalační příkazy obsažené přímo v notebooku.
+
 ### 7.2 Získání přístupového klíče TabPFN-2.5 (Prior Labs)
 
 Projekt využívá předtrénovaný model TabPFN-2.5 od společnosti Prior Labs. Notebook obsahuje buňku pro zadání přístupového klíče prostřednictvím proměnné `TABPFN_TOKEN`.
