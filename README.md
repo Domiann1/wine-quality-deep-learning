@@ -192,7 +192,16 @@ Potřebné knihovny jsou uvedeny v souboru `requirements.txt`. Výsledky experim
 
 Experimenty byly provedeny v prostředí Google Colab s využitím CPU a GPU NVIDIA Tesla T4.
 
-Při porovnávání časů je třeba zohlednit, že MLP je trénována od náhodné inicializace, zatímco TabPFN využívá předtrénované váhy.
+Použité prostředí:
+
+- Python 3.13.16
+- PyTorch 2.11.0+cu130
+- TabPFN 9.2.0
+- scikit-learn 1.6.1
+
+Přesné verze ostatních knihoven jsou uvedeny v souboru `requirements.txt`.
+
+Při porovnávání časů je třeba zohlednit, že MLP je trénována od náhodné inicializace, zatímco TabPFN využívá předtrénované váhy. MLP byla trénována na CPU, zatímco TabPFN využíval GPU.
 
 ## 10. Omezení projektu
 
