@@ -126,19 +126,19 @@ Při použití Google Colabu je možné využít instalační příkazy obsažen
 
 ### 7.2 Získání přístupového klíče TabPFN-2.5 (Prior Labs)
 
-Projekt využívá předtrénovaný model TabPFN-2.5 od společnosti Prior Labs. Notebook obsahuje buňku pro zadání přístupového klíče prostřednictvím proměnné `TABPFN_TOKEN`.
+Projekt využívá předtrénovaný model TabPFN-2.5 od společnosti Prior Labs. Pro první stažení předtrénovaných vah modelu v prostředí Google Colab je nutné přijmout licenční podmínky a ověřit přístup pomocí vlastního API klíče.
 
 Postup získání klíče:
 
 1. Otevřete stránku https://ux.priorlabs.ai/.
 2. Zaregistrujte se nebo se přihlaste ke svému účtu.
-3. V uživatelském účtu zkontrolujte a případně přijměte licenční podmínky modelu TabPFN-2.5.
-4. V části určené pro správu API klíčů nebo přístupových tokenů vytvořte nový klíč, pokud je tato možnost pro váš účet dostupná.
-5. Vygenerovaný klíč si ihned bezpečně zkopírujte a uložte.
-
-Notebook obsahuje krok pro zadání přístupového tokenu TABPFN_TOKEN. Požadavky na ověření přístupu se mohou lišit podle verze knihovny TabPFN a způsobu získání modelových vah. V případě potřeby postupujte podle aktuálních pokynů společnosti Prior Labs.
+3. V záložce Licenses přijměte licenční podmínky modelu TabPFN-2.5.
+4. Přejděte na stránku https://ux.priorlabs.ai/account, kde naleznete správu API klíčů.
+5. Vytvořte nebo zkopírujte svůj API klíč a bezpečně si jej uložte.
 
 **Důležité:** Celá hodnota nově vytvořeného klíče se může zobrazit pouze jednou, bezprostředně při jeho vytvoření. Po zavření okna už nemusí být možné ji znovu zobrazit. Pokud klíč ztratíte, bude potřeba vytvořit nový.
+
+Notebook následně vyžaduje zadání tohoto klíče prostřednictvím proměnné prostředí TABPFN_TOKEN. Postup bezpečného zadání je popsán v následující kapitole 7.3.
 
 ### 7.3 Vložení klíče do Google Colabu
 
