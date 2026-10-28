@@ -136,7 +136,7 @@ Postup získání klíče:
 4. V části určené pro správu API klíčů nebo přístupových tokenů vytvořte nový klíč, pokud je tato možnost pro váš účet dostupná.
 5. Vygenerovaný klíč si ihned bezpečně zkopírujte a uložte.
 
-Notebook obsahuje krok pro zadání tokenu TABPFN_TOKEN. Požadavky na autentizaci se mohou lišit podle verze knihovny TabPFN a způsobu získání modelových vah. V případě potřeby postupujte podle aktuálních pokynů Prior Labs.
+Notebook obsahuje krok pro zadání přístupového tokenu TABPFN_TOKEN. Požadavky na ověření přístupu se mohou lišit podle verze knihovny TabPFN a způsobu získání modelových vah. V případě potřeby postupujte podle aktuálních pokynů společnosti Prior Labs.
 
 **Důležité:** Celá hodnota nově vytvořeného klíče se může zobrazit pouze jednou, bezprostředně při jeho vytvoření. Po zavření okna už nemusí být možné ji znovu zobrazit. Pokud klíč ztratíte, bude potřeba vytvořit nový.
 
@@ -203,7 +203,14 @@ Při porovnávání časů je třeba zohlednit, že MLP je trénována od náhod
 - Modely se liší výpočetní náročností i způsobem trénování.
 - Výsledky nelze automaticky zobecnit na jiné datasety.
 
-## 11. Závěr
+## 11. Využití generativní umělé inteligence
+
+Při tvorbě projektu byly využity nástroje generativní umělé inteligence jako podpůrný prostředek při návrhu a úpravách zdrojového kódu, vysvětlování použitých metod, řešení technických problémů a přípravě dokumentace.
+
+Experimenty byly provedeny v prostředí Google Colab. Výsledky a závěry vycházejí z provedených výpočtů a vyhodnocení použitých modelů.
+  
+
+## 12. Závěr
 
 Projekt ukazuje možnosti použití hlubokého učení pro regresní úlohu nad tabulkovými daty.
 
